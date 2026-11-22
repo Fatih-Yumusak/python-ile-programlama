@@ -19,11 +19,10 @@ while hata < 6:
         else:
             goster += "_ "
             tamamlandi = False
-    print(f"{goster.strip()}  (hata: {hata}/6)")
-
     if tamamlandi:
-        print("Kazandınız!")
+        print(f"{goster.strip()}  (hata: {hata}/6)   Kazandınız!")
         break
+    print(f"{goster.strip()}  (hata: {hata}/6)")
 
     # --- Girdi ---
     harf_girisi = input("Harf: ")

@@ -55,11 +55,11 @@ def _galaksiyi_yukle():
     return galaksi_kur(**veri)
 
 
-# oyun durumu - global kullanmamak için liste ve sözlük kullandım
+# oyun durumu liste ve sözlükte tutuluyor
 galaksi = _galaksiyi_yukle()
 envanter = {"credits": True, "engines": False, "copilot": True}
 _sayac = hamle_sayaci()
-_son_hamle = [0]  # tek elemanlı liste, global yazmadan içini değiştirebilmek için
+_son_hamle = [0]  # tek elemanlı liste, içini değiştirebilmek için
 
 
 def travel():
